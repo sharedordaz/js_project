@@ -7,18 +7,29 @@
     --Bittersweet: #F87060;
     --Light-gray: #CDD7D6;
     --Grullo: #B3A394;
+
     background-color: var(--Oxfort-Blue) ;
 }
 
 body{
-    margin-left:15%;
-    margin-right:15%;
-    margin-bottom:3%;
+    margin-left:5%;
+    margin-right:5%;
+    margin-bottom:2%;
     margin-top:1%;
     padding:1%;
     background-color:white;
 }
+.objects{
+    display: flex;
+    
+}
+.nested{
+    border-style: solid;
+    border-color: gray;
+    margin:6px;
+    padding:1%;
 
+}
 
 h1, h2, h3, h4{
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
