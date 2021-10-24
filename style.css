@@ -34,10 +34,21 @@ p, i, b, input, button{
 p{
     font-weight: 200;
 }
+button{
+    background-color:var(--Bittersweet);
+    font-weight: 1000;
+}
+button:active{
+    background-color:var(--Grullo);
+}
+
 
 .objects{
     display: flex;
-    
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
 }
 .nested{
     border-style: solid;
@@ -51,4 +62,18 @@ p{
 }
 .nested img{
     height: 100px;
+}
+.nested button{
+    margin-top:0.3em;
+}
+
+
+/*---------------*/
+.cart{
+    width: 100%;
+}
+.cart th{
+    background-color: var(--Grullo);
+    border:1px solid gray;
+
 }
