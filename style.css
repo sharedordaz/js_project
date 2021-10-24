@@ -29,9 +29,11 @@ h1, h2, h3, h4{
 
 p, i, b, input, button{
     font-family: 'Roboto Mono', monospace,'Lucida Sans Unicode','Lucida Sans', sans-serif;
-
+    font-weight: 600;
 }
-
+p{
+    font-weight: 200;
+}
 
 .objects{
     display: flex;
