@@ -1,28 +1,38 @@
 function add_cart_1(){
-    let Name = document.querySelector("#1 h4").innerHTML; // Get the name
-    let price = document.querySelector("#1 p").innerHTML; //Get the price
+    let Name = document.querySelector(".h41").innerHTML; // Get the name
+    
+    let price = document.querySelector(".p1").innerHTML; //Get the price
+    let n_price = price.replace("$", '');
     let quantity = document.querySelector(".desk_quantity").value; // Get the quantity
-    let total = price * quantity; //calculate total
+    console.log(quantity)
+    let total = n_price * quantity; //calculate total
 
-    let tr = document.createElement("tr"); //create trow
+    if (quantity == ""){
+        alert("Please put a quantity");
 
-    let name_cell = document.createElement("td");
-    name_cell.innerHTML = Name;
+    }
 
-    let price_cell = document.createElement("td");
-    price_cell.innerHTML = price;
+    else{
+        let tr = document.createElement("tr"); //create trow
 
-    let quantity_cell = document.createElement("td");
-    quantity_cell.innerHTML = quantity;
+        let name_cell = document.createElement("td");
+        name_cell.innerHTML = Name;
 
-    let total_cell = document.createElement("td");
-    total_cell.innerHTML = total
+        let price_cell = document.createElement("td");
+        price_cell.innerHTML = price;
 
-    let cart = document.querySelector(".cart");
-    cart.appendChild(tr);
+        let quantity_cell = document.createElement("td");
+        quantity_cell.innerHTML = quantity;
 
-    cart.appendChild(name_cell);
-    cart.appendChild(price_cell);
-    cart.appendChild(quantity_cell);
-    cart.appendChild(total_cell);
+        let total_cell = document.createElement("td");
+        total_cell.innerHTML = total;
+
+        let cart = document.querySelector(".cart");
+        cart.appendChild(tr);
+
+        cart.appendChild(name_cell);
+        cart.appendChild(price_cell);
+        cart.appendChild(quantity_cell);
+        cart.appendChild(total_cell);
+}
 }
