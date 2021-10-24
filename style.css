@@ -19,6 +19,17 @@ body{
     padding:1%;
     background-color:white;
 }
+
+h1, h2, h3, h4{
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+}
+
+p, i, b, input, button{
+    font-family: 'Roboto Mono', monospace,'Lucida Sans Unicode','Lucida Sans', sans-serif;
+
+}
+
+
 .objects{
     display: flex;
     
@@ -30,12 +41,6 @@ body{
     padding:1%;
 
 }
-
-h1, h2, h3, h4{
-    font-family: 'Oswald', Arial, Helvetica, sans-serif;
-}
-
-p, i, b, input, button{
-    font-family: 'Roboto Mono', monospace,'Lucida Sans Unicode','Lucida Sans', sans-serif;
-
+.nested input{
+    width: 2em;
 }
