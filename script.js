@@ -1,3 +1,4 @@
+let total_array = []
 function add_cart_1(){
     let Name = document.querySelector(".h41").innerHTML; // Get the name
     
@@ -6,6 +7,8 @@ function add_cart_1(){
     let quantity = document.querySelector(".desk_quantity").value; // Get the quantity
     console.log(quantity)
     let total = n_price * quantity; //calculate total
+    total_array.push(total)
+    let a_total = "$" + total
 
     if (quantity == ""){
         alert("Please put a quantity");
@@ -28,7 +31,7 @@ function add_cart_1(){
         quantity_cell.innerHTML = quantity;
 
         let total_cell = document.createElement("td");
-        total_cell.innerHTML = total;
+        total_cell.innerHTML = a_total;
 
         let cart = document.querySelector(".cart");
         cart.appendChild(tr);
@@ -37,6 +40,7 @@ function add_cart_1(){
         cart.appendChild(price_cell);
         cart.appendChild(quantity_cell);
         cart.appendChild(total_cell);
+
 }
 }
 
@@ -45,10 +49,11 @@ function add_cart_2(){
     
     let price = document.querySelector(".p2").innerHTML; //Get the price
     let n_price = price.replace("$", '');
-    let quantity = document.querySelector(".desk_quantity").value; // Get the quantity
+    let quantity = document.querySelector(".g_quantity").value; // Get the quantity
     console.log(quantity)
     let total = n_price * quantity; //calculate total
-
+    total_array.push(total);
+    let a_total = "$" + total;
     if (quantity == ""){
         alert("Please put a quantity");
 
@@ -70,7 +75,7 @@ function add_cart_2(){
         quantity_cell.innerHTML = quantity;
 
         let total_cell = document.createElement("td");
-        total_cell.innerHTML = total;
+        total_cell.innerHTML = a_total;
 
         let cart = document.querySelector(".cart");
         cart.appendChild(tr);
@@ -87,10 +92,11 @@ function add_cart_3(){
     
     let price = document.querySelector(".p3").innerHTML; //Get the price
     let n_price = price.replace("$", '');
-    let quantity = document.querySelector(".desk_quantity").value; // Get the quantity
+    let quantity = document.querySelector(".dsn_quantity").value; // Get the quantity
     console.log(quantity)
     let total = n_price * quantity; //calculate total
-
+    total_array.push(total);
+    let a_total = "$" + total;
     if (quantity == ""){
         alert("Please put a quantity");
 
@@ -112,7 +118,7 @@ function add_cart_3(){
         quantity_cell.innerHTML = quantity;
 
         let total_cell = document.createElement("td");
-        total_cell.innerHTML = total;
+        total_cell.innerHTML = a_total;
 
         let cart = document.querySelector(".cart");
         cart.appendChild(tr);
@@ -128,10 +134,11 @@ function add_cart_4(){
     
     let price = document.querySelector(".p4").innerHTML; //Get the price
     let n_price = price.replace("$", '');
-    let quantity = document.querySelector(".desk_quantity").value; // Get the quantity
+    let quantity = document.querySelector(".s_quantity").value; // Get the quantity
     console.log(quantity)
     let total = n_price * quantity; //calculate total
-
+    total_array.push(total);
+    let a_total = "$" + total;
     if (quantity == ""){
         alert("Please put a quantity");
 
@@ -153,7 +160,7 @@ function add_cart_4(){
         quantity_cell.innerHTML = quantity;
 
         let total_cell = document.createElement("td");
-        total_cell.innerHTML = total;
+        total_cell.innerHTML = a_total;
 
         let cart = document.querySelector(".cart");
         cart.appendChild(tr);
@@ -169,10 +176,11 @@ function add_cart_5(){
     
     let price = document.querySelector(".p5").innerHTML; //Get the price
     let n_price = price.replace("$", '');
-    let quantity = document.querySelector(".desk_quantity").value; // Get the quantity
+    let quantity = document.querySelector(".as_quantity").value; // Get the quantity
     console.log(quantity)
     let total = n_price * quantity; //calculate total
-
+    total_array.push(total);
+    let a_total = "$" + total;
     if (quantity == ""){
         alert("Please put a quantity");
 
@@ -194,7 +202,7 @@ function add_cart_5(){
         quantity_cell.innerHTML = quantity;
 
         let total_cell = document.createElement("td");
-        total_cell.innerHTML = total;
+        total_cell.innerHTML = a_total;
 
         let cart = document.querySelector(".cart");
         cart.appendChild(tr);
@@ -204,4 +212,14 @@ function add_cart_5(){
         cart.appendChild(quantity_cell);
         cart.appendChild(total_cell);
 }
+}
+
+function get_total(){
+    let a_total = total_array.reduce(sum);
+    let msg = "The total is $" + a_total;
+    function sum(num, num2){
+        return num + num2;
+    }
+
+    alert(msg)
 }

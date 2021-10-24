@@ -82,3 +82,12 @@ button:active{
     background-color: var(--Light-gray);
     border:2px solid gray;
 }
+
+.get_total{
+    background-color:var(--Bittersweet);
+    color: black;
+}
+.get_total:active{
+    background-color: black;
+    color: var(--Grullo);
+}
