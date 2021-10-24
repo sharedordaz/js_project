@@ -19,6 +19,9 @@ body{
     padding:1%;
     background-color:white;
 }
+img{
+    max-width: 100%;
+}
 
 h1, h2, h3, h4{
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
@@ -43,4 +46,7 @@ p, i, b, input, button{
 }
 .nested input{
     width: 2em;
+}
+.nested img{
+    height: 100px;
 }
