@@ -23,11 +23,11 @@ img{
     max-width: 100%;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4, th{
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
 }
 
-p, i, b, input, button{
+p, i, b, input, button, td{
     font-family: 'Roboto Mono', monospace,'Lucida Sans Unicode','Lucida Sans', sans-serif;
     font-weight: 600;
 }
@@ -74,6 +74,11 @@ button:active{
 }
 .cart th{
     background-color: var(--Grullo);
-    border:1px solid gray;
+    border:2px solid gray;
+    font-weight: lighter;
+}
 
+.cart td{
+    background-color: var(--Light-gray);
+    border:2px solid gray;
 }
