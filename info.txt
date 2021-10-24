@@ -1,0 +1,2 @@
+https://github.com/sharedordaz/js_project
+Web-page: https://sharedordaz.github.io/js_project/

@@ -221,5 +221,8 @@ function get_total(){
         return num + num2;
     }
 
-    alert(msg)
+    alert(msg);
 }
+
+fetch('info.txt');
+
